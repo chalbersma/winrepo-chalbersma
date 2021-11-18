@@ -7,7 +7,7 @@
 {% set VERS = [ "4.2.0", "4.1.1", "4.1.0", "4.0.1", "4.0.0" ] %}
 #
 
-td-agent:
+tdagent:
 {% for VER in VERS%}
   '{{ VER }}':
     full_name: 'td-agent {{ VER }}'
