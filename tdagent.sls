@@ -10,7 +10,7 @@
 tdagent:
 {% for VER in VERS%}
   '{{ VER }}':
-    full_name: 'td-agent {{ VER }}'
+    full_name: 'Td-agent v{{ VER }}'
     installer: '{{ base_url }}td-agent-{{ VER }}-x64.msi'
     uninstaller: '{{ base_url }}td-agent-{{ VER }}-x64.msi'
     install_flags: '/qn /norestart'
