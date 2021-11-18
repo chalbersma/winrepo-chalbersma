@@ -8,8 +8,7 @@
 #
 
 tdagent:
-{% for VER in VERS%}
-  '{{ VER }}':
+  '4.2.0':
     full_name: 'td-agent {{ VER }}'
     installer: '{{ base_url }}td-agent-{{ VER }}-x64.msi'
     uninstaller: '{{ base_url }}td-agent-{{ VER }}-x64.msi'
@@ -17,4 +16,3 @@ tdagent:
     uninstall_flags: '/qn /norestart'
     msiexec: True
     reboot: False
-{% endfor %}
