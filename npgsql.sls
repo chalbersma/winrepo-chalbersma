@@ -14,7 +14,7 @@
 #
 
 npgsql4:
-{% for VER, conf in VERS.items() %}
+{% for VER in VERS %}
   '{{ VER }}':
     full_name: 'Npgsql v{{ VER }}'
     installer: '{{ base_url }}{{ VER }}/Npgsql-{{ VER }}.msi'
