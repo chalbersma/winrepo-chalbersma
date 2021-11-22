@@ -6,13 +6,14 @@
 # Npgsql stopped releaseing .msi installers with version 5.x and above but 4.x is still receiving updates.
 # https://github.com/npgsql/npgsql/issues/3431
 #
-{% set base_url = 'https://github.com/npgsql/npgsql/releases/download/v' $}
+{% set base_url = 'https://github.com/npgsql/npgsql/releases/download/v' %}
 
-{% set VERS = [ "4.1.8", ""4.0.12" ] %}
+{% set VERS4 = [ "4.1.8", ""4.0.12" ] %}
+# Using VERS4 as there is a 5.x and 6.x line that maybe we can do someday.
 #
 
 npgsql4:
-{% for VER in VERS%}
+{% for VER in VERS4%}
   '{{ VER }}':
     full_name: 'Npgsql v{{ VER }}'
     installer: '{{ base_url }}{{ VER }}/Npgsql-{{ ver }}.msi'
