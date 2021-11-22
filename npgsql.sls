@@ -8,7 +8,7 @@
 #
 {% set base_url = 'https://github.com/npgsql/npgsql/releases/download/v' %}
 
-{% set VERS = [ "4.1.8", ""4.0.12" ] %}
+{% set VERS = [ "4.1.8", "4.0.12" ] %}
 # Using VERS as there is a 5.x and 6.x line that maybe we can do someday.
 #
 
