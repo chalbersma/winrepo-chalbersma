@@ -8,12 +8,12 @@
 #
 {% set base_url = 'https://github.com/npgsql/npgsql/releases/download/v' %}
 
-{% set VERS4 = [ "4.1.8", ""4.0.12" ] %}
-# Using VERS4 as there is a 5.x and 6.x line that maybe we can do someday.
+{% set VERS = [ "4.1.8", ""4.0.12" ] %}
+# Using VERS as there is a 5.x and 6.x line that maybe we can do someday.
 #
 
 npgsql4:
-{% for VER in VERS4%}
+{% for VER in VERS%}
   '{{ VER }}':
     full_name: 'Npgsql v{{ VER }}'
     installer: '{{ base_url }}{{ VER }}/Npgsql-{{ ver }}.msi'
