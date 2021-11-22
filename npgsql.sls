@@ -16,8 +16,8 @@ npgsql4:
 {% for VER in VERS%}
   '{{ VER }}':
     full_name: 'Npgsql v{{ VER }}'
-    installer: '{{ base_url }}{{ VER }}/Npgsql-{{ ver }}.msi'
-    uninstaller: '{{ base_url }}{{ VER }}/Npgsql-{{ ver }}.msi'
+    installer: '{{ base_url }}{{ VER }}/Npgsql-{{ VER }}.msi'
+    uninstaller: '{{ base_url }}{{ VER }}/Npgsql-{{ VER }}.msi'
     install_flags: '/qn /norestart'
     uninstall_flags: '/qn /norestart'
     msiexec: True
