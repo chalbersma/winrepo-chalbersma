@@ -19,7 +19,7 @@ npgsql4:
     full_name: 'Npgsql {{ VER }}'
     installer: '{{ base_url }}{{ VER }}/Npgsql-{{ VER }}.msi'
     uninstaller: '{{ base_url }}{{ VER }}/Npgsql-{{ VER }}.msi'
-    install_flags: '/qn /norestart'
+    install_flags: '/qn /norestart ADDLOCAL=NpgsqlPerformanceCounters,Npgsql'
     uninstall_flags: '/qn /norestart'
     msiexec: True
     reboot: False
