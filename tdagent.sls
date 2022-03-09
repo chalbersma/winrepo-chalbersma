@@ -4,7 +4,7 @@
 #
 {% set base_url = 'https://s3.amazonaws.com/packages.treasuredata.com/4/windows/' %}
 
-{% set VERS = [ "4.1.1", "4.2.0"  ] %}
+{% set VERS = [ "4.1.1", "4.2.0", "4.3.0" ] %}
 #
 
 tdagent:
